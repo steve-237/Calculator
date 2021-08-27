@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Calculatrice</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta content="author" name="Steve Pegouen">
+</head>
+<body>
+	<div class="calculator">
+		<div class="screen">
+			<div class="inner-screen"></div>
+		</div>
+		<div class="buttons">
+			<table>
+				<tr>
+					<td><button class="button orange-button" onclick="erase()">c</button></td>
+					<td><button class="button" onclick="print('(')">(</button></td>
+					<td><button class="button" onclick="print(')')">)</button></td>
+					<td><button class="button" onclick="print('/')">/</button></td>
+				</tr>
+				<tr>
+					<td><button class="button" onclick="print('7')">7</button></td>
+					<td><button class="button" onclick="print('8')">8</button></td>
+					<td><button class="button" onclick="print('9')">9</button></td>
+					<td><button class="button" onclick="print('*')">*</button></td>
+				</tr>
+				<tr>
+					<td><button class="button" onclick="print('4')">4</button></td>
+					<td><button class="button" onclick="print('5')">5</button></td>
+					<td><button class="button" onclick="print('6')">6</button></td>
+					<td><button class="button" onclick="print('-')">-</button></td>
+				</tr>
+				<tr>
+					<td><button class="button" onclick="print('1')">1</button></td>
+					<td><button class="button" onclick="print('2')">2</button></td>
+					<td><button class="button" onclick="print('3')">3</button></td>
+					<td><button class="button" onclick="print('+')">+</button></td>
+				</tr>
+				<tr>
+					<td><button class="button" onclick="print('0')">0</button></td>
+					<td><button class="button" onclick="print('.')">.</button></td>
+					<td colspan="2"><button class="button l-button" onclick="compute()">=</button></td>
+				</tr>
+			</table>
+			<p>made by : Steve Pegouen</p>
+		</div>
+	</div>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
